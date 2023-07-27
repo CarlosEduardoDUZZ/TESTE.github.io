@@ -1,0 +1,86 @@
+@charset "UTF-8";
+/* Estilo global para todos os elementos */
+* {
+    box-sizing: border-box; /* Define o modelo de caixa para incluir o preenchimento e a borda na largura e altura */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o preenchimento padrão */
+  }
+  
+  /* Estilos para o elemento <body> */
+  body {
+    background-color: rgb(29, 25, 25); /* Define a cor de fundo como um tom de cinza escuro */
+    height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+    margin: 140px; /* Define uma margem de 140 pixels para todos os lados */
+    padding: 20px; /* Define um preenchimento interno de 20 pixels */
+  }
+  
+  /* Estilos para os elementos <h1> com a classe "title" */
+  h1.title {
+    display: flex; /* Direciona os elementos filhos em uma única linha */
+    color: white; /* Define a cor do texto como branco */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    justify-content: center; /* Centraliza horizontalmente os elementos filhos */
+    font-size: 4em; /* Define o tamanho da fonte como 4em */
+  }
+  
+  /* Estilo para os elementos com a classe "logon-content" */
+  .logon-content {
+  display: flex; /* Define o elemento como um contêiner flexível */
+  flex-wrap: wrap; /* Permite que os itens dentro do contêiner quebrem para a próxima linha se necessário */
+  justify-content: center; /* Centraliza os itens horizontalmente dentro do contêiner */
+  align-items: center; /* Centraliza os itens verticalmente dentro do contêiner */
+  list-style: none; /* Remove os marcadores de lista dos elementos filhos */
+}
+
+  /* Estilos para os elementos <p> dentro de uma lista <ul> com a classe "logon-content" */
+  ul.logon-content p {
+    color: lightgrey; /* Define a cor do texto como cinza claro */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para os elementos <p> dentro de uma lista <ul> com a classe "logon-content" quando o mouse passa por cima */
+  ul.logon-content p:hover {
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+    color: white; /* Define a cor do texto como branco */
+  }
+  
+  /* Estilos para as imagens dentro dos itens com a classe "logon-item" dentro de uma lista <ul> com a classe "logon-content" */
+  ul.logon-content .logon-item img {
+    height: 160px; /* Define a altura da imagem como 160 pixels */
+    width: 160px; /* Define a largura da imagem como 160 pixels */
+    border-radius: 5px; /* Adiciona bordas arredondadas à imagem */
+    align-content: center; /* Centraliza o conteúdo verticalmente */
+    margin: 30px 12px 15px; /* Define uma margem superior de 30px, margem direita/esquerda de 12px e margem inferior de 15px */
+    transition: all 500ms ease; /* Aplica uma transição suave de 500 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para as imagens dentro dos itens com a classe "logon-item" dentro de uma lista <ul> com a classe "logon-content" quando o mouse passa por cima */
+  ul.logon-content .logon-item img:hover {
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+    border: 3px solid white; /* Adiciona uma borda sólida de 3 pixels com cor branca */
+  }
+  
+  /* Estilos para o elemento com o ID "logon" */
+  #logon {
+    text-align: center; /* Centraliza o texto horizontalmente */
+  }
+  
+  /* Estilos para os elementos com a classe "btn-primary" */
+  .btn-primary {
+    background-color: rgb(29, 25, 25); /* Define a cor de fundo como um tom de cinza escuro */
+    color: rgb(142, 132, 132); /* Define a cor do texto como um tom de cinza */
+    font-size: 18px; /* Define o tamanho da fonte como 18 pixels */
+    margin-top: 80px; /* Define uma margem superior de 80 pixels */
+    border: 0.8px solid; /* Adiciona uma borda sólida com 0.8 pixels de largura */
+    border-color: rgb(142, 132, 132); /* Define a cor da borda como o mesmo tom de cinza */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+    padding: 10px 33px; /* Define um preenchimento interno de 10 pixels na vertical e 33 pixels na horizontal */
+    transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para os elementos com a classe "btn-primary" quando o mouse passa por cima */
+  .btn-primary:hover {
+    border: 2px solid white; /* Altera a borda para 2 pixels de largura e cor branca */
+    color: white; /* Altera a cor do texto para branco */
+  }

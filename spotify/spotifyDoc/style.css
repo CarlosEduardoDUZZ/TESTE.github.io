@@ -1,0 +1,239 @@
+/* Define a codificação de caracteres como UTF-8 */
+@charset "UTF-8";
+
+/* Define variáveis de cor personalizadas */
+:root {
+  --defalt-green: #1db954;
+  --ligth-green: #1ed760;
+}
+
+/* Estilo global para todos os elementos */
+* {
+  box-sizing: border-box; /* Define o modelo de caixa para incluir o preenchimento e a borda na largura e altura */
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o preenchimento padrão */
+}
+
+/* Estilos para o elemento <body> */
+body {
+  font-family: 'Roboto', sans-serif; /* Define a família de fontes do texto */
+}
+
+/* Estilos para a classe ".btn-primary" */
+.btn-primary {
+  background: var(--defalt-green); /* Define o fundo com a cor personalizada padrão */
+  color: white; /* Define a cor do texto como branco */
+  text-transform: uppercase; /* Transforma o texto em caixa alta */
+  padding: 15px 60px; /* Define o preenchimento interno */
+  border: none; /* Remove a borda */
+  border-radius: 30px; /* Define a borda arredondada */
+  letter-spacing: 1px; /* Define o espaçamento entre letras */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+  transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+}
+
+/* Estilos para a classe ".btn-primary" quando o mouse passa por cima */
+.btn-primary:hover {
+  background-color: var(--ligth-green); /* Define a cor de fundo como a cor personalizada mais clara */
+  cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+}
+
+/* Estilos para a classe ".logo" */
+.logo {
+  height: 40px; /* Define a altura da imagem */
+  width: auto; /* Permite que a largura da imagem seja ajustada automaticamente */
+}
+
+/* Estilos para o elemento com o ID "navbar" */
+#navbar {
+  display: flex; /* Define o contêiner como flexível */
+  background-color: rgba(0, 0, 0, 0.6); /* Define a cor de fundo com um tom de preto transparente */
+  color: white; /* Define a cor do texto como branco */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  position: fixed; /* Define a posição como fixa */
+  top: 0; /* Alinha o elemento ao topo */
+  width: 100%; /* Define a largura como 100% */
+}
+
+/* Estilos para o contêiner com a classe ".navbar-container" dentro do elemento com o ID "navbar" */
+#navbar .navbar-container {
+  width: 60%; /* Define a largura do contêiner */
+  display: flex; /* Define o contêiner como flexível */
+  align-items: center; /* Centraliza os itens verticalmente */
+  justify-content: space-between; /* Distribui o espaço entre os itens */
+  padding: 20px 0; /* Define o preenchimento interno */
+}
+
+/* Estilos para a lista não ordenada dentro do contêiner com a classe ".navbar-container" */
+#navbar .navbar-container ul {
+  display: flex; /* Define a lista como flexível */
+  list-style: none; /* Remove os marcadores de lista */
+  font-weight: bold; /* Define a espessura da fonte como negrito */
+}
+
+/* Estilos para cada item de lista dentro do contêiner com a classe ".navbar-container ul li" */
+#navbar .navbar-container ul li {
+  padding: 0 20px; /* Define o preenchimento interno */
+  transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+}
+
+/* Estilos para cada item de lista quando o mouse passa por cima */
+#navbar .navbar-container ul li:hover {
+  color: var(--defalt-green); /* Define a cor do texto como a cor personalizada padrão */
+  cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+}
+
+/* Estilos para o terceiro item de lista dentro do contêiner com a classe ".navbar-container ul li:nth-child(3)" */
+#navbar .navbar-container ul li:nth-child(3) {
+  border-right: 1px solid white; /* Adiciona uma borda à direita */
+}
+
+/* Estilos para o elemento com o ID "showcase" */
+#showcase {
+  height: 100vh; /* Define a altura como 100% da altura da janela de visualização */
+  display: flex; /* Define o contêiner como flexível */
+  justify-content: center; /* Centraliza os itens horizontalmente */
+  align-items: center; /* Centraliza os itens verticalmente */
+  color: white; /* Define a cor do texto como branco */
+  background: url(/showcase.webp) center center/cover; /* Define a imagem de fundo */
+  background-color: rgba(0, 0, 0, 0.3); /* Define a cor de fundo com um tom de preto transparente */
+  background-blend-mode: color; /* Define o modo de mesclagem de cores do plano de fundo */
+}
+
+/* Estilos para o contêiner com a classe ".showcase-container" dentro do elemento com o ID "showcase" */
+#showcase .showcase-container {
+    display: flex; /* Define o contêiner como flexível */
+    flex-direction: column; /* Define a direção dos itens como coluna */
+    align-items: center; /* Centraliza os itens verticalmente */
+  }
+  
+  /* Estilos para o elemento <h2> dentro do contêiner com a classe ".showcase-container" */
+  #showcase .showcase-container h2 {
+    font-size: 5rem; /* Define o tamanho da fonte */
+  }
+  
+  /* Estilos para o elemento <p> dentro do contêiner com a classe ".showcase-container" */
+  #showcase .showcase-container p {
+    margin: 15px 0; /* Define as margens */
+    font-size: 15px; /* Define o tamanho da fonte */
+  }
+  
+  /* Estilos para o elemento <footer> com o ID "footer" */
+  footer#footer {
+    background-color: black; /* Define a cor de fundo como preto */
+    color: white; /* Define a cor do texto como branco */
+    padding: 80px 0; /* Define o preenchimento interno */
+  }
+  
+  /* Estilos para o contêiner com a classe ".footer-content" dentro do elemento com o ID "footer" */
+  #footer .footer-content {
+    display: flex; /* Define o contêiner como flexível */
+    width: 60%; /* Define a largura do contêiner */
+    margin: auto; /* Centraliza horizontalmente */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+  }
+  
+  /* Estilos para o contêiner com a classe ".footer-menu" dentro do contêiner com a classe ".footer-content" */
+  #footer .footer-content .footer-menu {
+    margin: 0 60px; /* Define as margens */
+    list-style: none; /* Remove os marcadores de lista */
+  }
+  
+  /* Estilos para cada item de lista dentro do contêiner com a classe ".footer-content .footer-menu" */
+  #footer .footer-content .footer-menu .footer-menu-item {
+    margin: 25px 0; /* Define as margens */
+    transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para cada item de lista quando o mouse passa por cima */
+  #footer .footer-content .footer-menu .footer-menu-item:hover {
+    color: var(--defalt-green); /* Define a cor do texto como a cor personalizada padrão */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+  }
+  
+  /* Estilos para o elemento <p> dentro do contêiner com a classe ".footer-content .footer-menu" */
+  #footer .footer-content .footer-menu p {
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    text-transform: uppercase; /* Transforma o texto em caixa alta */
+    color: #919496; /* Define a cor do texto */
+    font-size: 0.8em; /* Define o tamanho da fonte */
+  }
+  
+  /* Estilos para as imagens dentro do elemento com a classe ".socials" dentro do elemento com o ID "footer" */
+  footer#footer .socials img {
+    background-color: white; /* Define a cor de fundo como branco */
+    height: 35px; /* Define a altura da imagem */
+    border-radius: 20px; /* Define a borda arredondada */
+  }
+  
+  /* Estilos para o elemento <i> dentro do elemento com a classe ".socials" */
+  .socials i {
+    margin: 0 20px; /* Define as margens */
+    font-size: 1.7em; /* Define o tamanho da fonte */
+    transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para o elemento <i> quando o mouse passa por cima */
+  .socials i:hover {
+    color: var(--defalt-green); /* Define a cor do ícone como a cor personalizada padrão */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+  }
+  
+  /* Estilos para o contêiner com a classe ".footer-info" */
+  .footer-info {
+    display: flex; /* Define o contêiner como flexível */
+    justify-content: space-between; /* Distribui o espaço entre os itens */
+    align-items: flex-end; /* Alinha os itens na parte inferior */
+    width: 60%; /* Define a largura do contêiner */
+    margin: auto; /* Centraliza horizontalmente */
+    font-weight: bold; /* Define a espessura da fonte como negrito */
+    color: #919496; /* Define a cor do texto */
+    font-size: 0.7em; /* Define o tamanho da fonte */
+    padding-top: 50px; /* Define o preenchimento superior */
+  }
+  
+  /* Estilos para a lista não ordenada dentro do contêiner com a classe ".footer-info .footer-info-items" */
+  .footer-info .footer-info-items {
+    display: flex; /* Define a lista como flexível */
+    list-style: none; /* Remove os marcadores de lista */
+  }
+  
+  /* Estilos para cada item de lista dentro do contêiner com a classe ".footer-info .footer-info-items .footer-info-item" */
+  .footer-info .footer-info-items .footer-info-item {
+    margin: 0 10px; /* Define as margens */
+    transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+  }
+  
+  /* Estilos para cada item de lista quando o mouse passa por cima */
+  .footer-info .footer-info-items .footer-info-item:hover {
+    color: var(--defalt-green); /* Define a cor do texto como a cor personalizada padrão */
+    cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+  }
+  
+  /* Estilos para o contêiner com a classe ".country" dentro do contêiner com a classe ".rights" dentro do contêiner com a classe ".footer-info" */
+.footer-info .rights .country {
+display: flex; /* Define o contêiner como flexível */
+justify-content: flex-end; /* Alinha os itens à direita */
+align-items: center; /* Centraliza os itens verticalmente */
+margin-bottom: 10px; /* Define a margem inferior */
+}
+
+/* Estilos para o elemento <p> dentro do contêiner com a classe ".country" */
+.footer-info .rights .country p {
+transition: all 300ms ease; /* Aplica uma transição suave de 300 milissegundos para todas as propriedades */
+}
+
+/* Estilos para o elemento <p> quando o mouse passa por cima */
+.footer-info .rights .country p:hover {
+color: var(--defalt-green); /* Define a cor do texto como a cor personalizada padrão */
+cursor: pointer; /* Altera o cursor do mouse para um ponteiro */
+}
+
+/* Estilos para a imagem da bandeira do Brasil */
+.footer-info .rights .country .brazil-flag {
+height: 20px; /* Define a altura da imagem */
+width: auto; /* Permite que a largura da imagem seja ajustada automaticamente */
+display: inline-block; /* Define o elemento como um bloco em linha */
+margin-left: 10px; /* Define a margem à esquerda */
+}
+  

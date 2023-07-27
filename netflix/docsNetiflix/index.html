@@ -1,0 +1,87 @@
+<!--Crie uma new file, nomeie-a “index.html” para criar uma página inicial no seu diretório.  -->
+
+<!DOCTYPE html> <!--Essa tag  é utilizada para que ocorra uma interpretação correta e renderização da página nos navegadores.-->
+
+<html lang="pt-br"> <!--Aqui adicionamos o “pt-br” para que os mecanismos de busca identifiquem a linguagem predominante da página e direcione os usuários para os resultados relevantes em seu idioma.-->
+
+<!-- As tags head são responsáveis por fornecer informações e metadados sobre o documento HTML que não são visíveis na página, mas são importantes para que o navegador e outros mecanismos de busca interpretem o conteúdo corretamente.-->
+<head>
+    <meta charset="UTF-8"> <!--Regra para que seja possível adicionar diversos caracteres, incluindo acentos, símbolos e caracteres de outros idiomas.-->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+    <link rel="shortcut icon" href="/netflix/netflix.ico" type="image/x-icon"> <!--Podemos adicionar um ícone ao topo da página utilizando (link : favicon) seguido da tecla Enter, isso criará todo o “corpo” da tag, você só precisará adicionar o caminho para o seu arquivo ico, que pode ser baixado em sites e deve ser colocado na mesma pasta do seu código.-->
+
+    <link rel="stylesheet" href="style.css"> <!--Aqui está a tag que vincula um arquivo CSS externo ao seu documento HTML. Ele pode ser criado utilizando (Link : css) seguido pela tecla Enter, criando assim o “corpo” da tag.-->
+
+    <title>Netflix</title> <!--Aqui está a tag responsável por adicionar um título à nossa página, é importante utilizar um título claro, pois ele é usado pelo mecanismo de busca para exibir o resultado da página nos resultados de pesquisa.-->
+
+</head>
+<!--Para criar uma <head> e todos os seus elementos de forma mais fácil, basta apertar as tecla ! + Enter, mas lembre-se de formatar algumas que vem como padrão.-->
+
+<!--Entre a tag body se concentra todo o conteúdo que será apresentado na sua página.-->
+<body>
+    
+    <h1 class="title">Quem está assistindo?</h1>
+    <!-- O h1 é responsável por adicionar um título em forma de texto,os títulos vão de h1 a h6, seguindo uma hierarquia. Lembre-se que só pode haver um h1, mas seu uso pode ser necessário ou não de acordo com a página e as necessidades do seu cliente.
+Aqui criamos uma classe title para destacar e facilitar o uso de estilos quando formos utilizar o CSS. Para criarmos ela de forma mais rápida utilizamos h1.title e apertamos a tecla Enter. 
+-->
+    
+    <div id="logon">
+        <!-- Utilizamos uma <div> para criar uma seção e facilitar o seu manuseio no CSS. O valor do seu “id” deve ser algo único,mas você pode ter quantas divs quiser utilizando ids diferentes. Para criar uma div de forma mais rápida você pode utilizar # seguido do nome do seu id e Enter.Dentro dos elementos “div” podemos adicionar outras diversas outras tags -->
+
+        <ul class="logon-content">
+            <!-- O elemento “ul” é utilizado para criar uma lista não ordenada,criamos uma classe ligada a ela para facilitar seu “manuseio” quando formos utilizar a CSS. Para adicionar itens a essa lista utilizamos a tag <li> como visto a seguir: -->
+            
+            <!--Para facilitar a identificação de cada item, criamos classes referentes a todas as tags <li> adicionadas. Dentro dessas tags podemos adicionar outras tags. Aqui adicionamos a tag <img> para adicionar imagens ao site, para isso, no “src” da tag <img> devemos adicionar o caminho ou URL da imagem, uma boa prática é adicionar ao alt=”” o conteúdo presente na imagem de forma escrita, visto que quando a imagem não é carregada, quando passamos o mouse por cima dela é exibida uma descrição sobre a mesma.
+             Ainda dentro de cada tag <li> adicionamos uma tag <p> que é responsável pela adição de texto
+            em um site.
+-->
+            <li class="logon-item">
+                <!-- Item de perfil 1 -->
+                <img src="/netflix/Obito.jpg" alt="">
+                <!-- Imagem do perfil de Obito -->
+                <p>Obito</p>
+                <!-- Nome do perfil de Obito -->
+            </li>
+            
+            <li class="logon-item">
+                <!-- Item de perfil 2 -->
+                <img src="/netflix/Itachi.jpg" alt="">
+                <!-- Imagem do perfil de Itachi -->
+                <p>Itachi</p>
+                <!-- Nome do perfil de Itachi -->
+            </li>
+            
+            <li class="logon-item">
+                <!-- Item de perfil 3 -->
+                <img src="/netflix/Sasuke.jpg" alt="">
+                <!-- Imagem do perfil de Sasuke -->
+                <p>Sasuke</p>
+                <!-- Nome do perfil de Sasuke -->
+            </li>
+            
+            <li class="logon-item">
+                <!-- Item de perfil 4 -->
+                <img src="/netflix/Shisui.jpg" alt="">
+                <!-- Imagem do perfil de Shisui -->
+                <p>Shisui</p>
+                <!-- Nome do perfil de Shisui -->
+            </li>
+            
+            <li class="logon-item">
+                <!-- Item de perfil 5 -->
+                <img src="/netflix/Madara.jpg" alt="">
+                <!-- Imagem do perfil de Madara -->
+                <p>Madara</p>
+                <!-- Nome do perfil de Madara -->
+            </li>
+        </ul>
+
+        <button class="btn-primary">Gerenciar perfis</button>
+        <!-- Botão para gerenciar perfis com a classe "btn-primary" para estilização -->
+    </div>
+    <!-- Ainda dentro da tag <div> adicionamos a tag <button> responsável por criar um botão no site. Atribuímos a ela uma classe chamada “btn-primary” para diferenciar esse botão de outros quando estivermos estilizando. -->
+
+</body>
+</html>
